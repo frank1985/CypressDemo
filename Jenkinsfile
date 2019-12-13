@@ -7,6 +7,6 @@ node('master'){
     bat label: 'Install NPM package', script: 'npm install'
     }
     stage('Test') {
-    bat label: 'Run test', script: 'npx cypress run'
+    bat label: 'Run test', script: 'npx cypress run --record'
     }
 }
